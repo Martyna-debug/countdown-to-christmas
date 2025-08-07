@@ -1,0 +1,53 @@
+body {
+background-color: skyblue;
+font-style: italic;
+font-family: 'Courier New', Courier, monospace;
+font-size: medium;
+font-weight: bolder;
+text-align: center;
+color: rgb(255, 255, 255); 
+}
+img{
+margin: 300px;
+display: auto;
+width: 100px;
+}
+@keyframes pulsowanie {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(20, 19, 69);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(97, 33, 236, 0.5);
+  }
+}
+#przycisk {
+  animation: pulsowanie 2s infinite;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #06619a;
+  color: rgb(47, 128, 235);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  img {
+    width: 60px;
+  }
+}
